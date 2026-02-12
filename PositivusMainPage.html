@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Positivus</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
@@ -12,17 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
             font-family: "Space Grotesk", sans-serif;
+            background-color: #fff;
+            color: #000;
         }
 
-        header {
-            padding: 20px 70px;
+        /* ÜMUMİ CONTAINER */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 90px;
         }
 
         /* NAVBAR */
@@ -32,28 +36,54 @@
             justify-content: space-between;
         }
 
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
         .nav-links a {
-            margin-left: 20px;
             text-decoration: none;
             color: black;
+            font-size: 14px;
         }
 
         .request {
             border: 1px solid black;
             padding: 10px 16px;
             border-radius: 12px;
+            font-size: 14px;
         }
+
+        /* HERO SECTION */
         .sekilliYazi {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 80px;
+            margin-top: 60px;
         }
 
         .sekilliYazi-yazi h1 {
             font-size: 48px;
-            line-height: 1.2;
-            margin: 0;
+            line-height: 1.25;
+            margin: 0 0 20px 0;
+        }
+
+        .sekilliYazi-yazi p {
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 420px;
+            margin-bottom: 24px;
+        }
+
+        .sekilliYazi-yazi button {
+            background-color: #111;
+            color: #fff;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
         }
 
         .sekilliYazi-sekil img {
@@ -65,36 +95,45 @@
 <body>
 
 <header>
+    <div class="container">
 
-    <!-- NAVBAR -->
-    <div class="nav">
-        <img src="Logo.svg" alt="Logo">
+        <!-- NAVBAR -->
+        <div class="nav">
+            <img src="Logo.svg" alt="Positivus Logo">
 
-        <div class="nav-links">
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Use Cases</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
-            <a href="#">Request a quote</a>
+            <div class="nav-links">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Use Cases</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+                <a href="#" class="request">Request a quote</a>
+            </div>
         </div>
+
+        <div class="sekilliYazi">
+            <div class="sekilliYazi-yazi">
+                <h1>
+                    Navigating the <br>
+                    digital landscape <br>
+                    for success
+                </h1>
+
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online
+                    through a range of services including SEO, PPC, social media marketing,
+                    and content creation.
+                </p>
+
+                <button>Book a consultation</button>
+            </div>
+
+            <div class="sekilliYazi-sekil">
+                <img src="Illustration.svg" alt="Illustration">
+            </div>
+        </div>
+
     </div>
-
-    
-    <div class="sekilliYazi">
-        <div class="sekilliYazi-yazi">
-            <h1>
-                Navigating the <br>
-                digital landscape <br>
-                for success
-            </h1>
-        </div>
-
-        <div class="sekilliYazi-sekil">
-            <img src="Illustration.svg" alt="Illustration">
-        </div>
-    </div>
-
 </header>
 
 </body>
