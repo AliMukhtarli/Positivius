@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<body>
-    <header>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Positivus</title>
-        <style>
-            
-        
+<head>
+    <meta charset="UTF-8">
+    <title>Positivus</title>
 
-            .navbar{
-                text-align: center;
-                position: relative;
-                margin-left: 750px;
-                margin-top: -25px;
-                justify-content: center;
-            }   
-            .navbar a{
-            padding: 15px;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        header {
+            padding: 20px 70px;
+        }
+
+        /* NAVBAR */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
             text-decoration: none;
             color: black;
-            
-            }
+        }
 
-            #request{
-            color: black;
-            border-radius:11px;
+        .request {
             border: 1px solid black;
-            }
-            #Logo{
-            margin-top: 20px;
-            display: block;
-            }
+            padding: 10px 16px;
+            border-radius: 12px;
+        }
+        .sekilliYazi {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
 
-        </style>
+        .sekilliYazi-yazi h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .sekilliYazi-sekil img {
+            height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- NAVBAR -->
+    <div class="nav">
+        <img src="Logo.svg" alt="Logo">
+
+        <div class="nav-links">
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">Request a quote</a>
+        </div>
+    </div>
 
     
+    <div class="sekilliYazi">
+        <div class="sekilliYazi-yazi">
+            <h1>
+                Navigating the <br>
+                digital landscape <br>
+                for success
+            </h1>
+        </div>
 
-    <img src="Logo.svg" alt="Logomuz!!!" id="Logo">
-    <nav class="navbar"> 
-        
-        <a href="#">About us</a> 
-        <a href="#">Services</a>
-        <a href="#">Use Cases</a>
-        <a href="#">Pricing</a>
-        <a href="#">Blog</a>
-        <a href="#" id="request">Request a quote</a>
-    </nav>
+        <div class="sekilliYazi-sekil">
+            <img src="Illustration.svg" alt="Illustration">
+        </div>
+    </div>
+
 </header>
 
-    
 </body>
 </html>
