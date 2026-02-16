@@ -14,14 +14,15 @@
         * {
             box-sizing: border-box;
         }
-        @media(max-widht: 768px){
-            .Servisler{
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
-                margin: 32px auto 16px;
+       @media (max-width: 768px) {
+            .Servisler {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 32px auto 16px;
             }
         }
+
 
         body {
             margin: 0;
@@ -291,6 +292,49 @@
         border: 8px solid white;
     }
 
+    .lets {
+    margin-top: 60px;
+    margin-left: 118px;
+    margin-right: 118px;
+    background-color: var(--etRengi);
+    border-radius: 50px;
+    }
+
+    .lets .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0px 40px;
+    }
+
+    .lets-yazi h3 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0 0 20px 0;
+    }
+
+    .lets-yazi p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin-bottom: 24px;
+    }
+
+    .lets-yazi button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    }
+
+    .lets img {
+    height: 320px;
+    }
+
 
     </style>
 </head>
@@ -438,14 +482,26 @@
     </section>
 
 
-    <section class="lets">
-        <div class="lets-boyuk">
-            <h2>Let's make things happen </h2>
-        </div>    
-        <div class="letsMakeThings-sozleri">
-            <p>Contact us today to learn more about how our digital <br> marketing services can help your business grow and <br> succed online.</p>
+    <div class="lets">
+        <div class="container">
+            <div class="lets-yazi">
+                <h3>
+                    Let's make things happen
+                </h3>
+
+                <p>
+                    Contact us today to learn more about how our digital <br>
+                     marketing services can help your business grow and <br> succeed online.
+                    
+                </p>
+                <button>Get your free proposal</button>   
+            </div>
+
+            <div class="lets-sekil">
+                <img src="images/lets-sekli.svg" alt="Illustration">
+            </div>
         </div>
-    </section>
+    </div>
 
 
 </header>
