@@ -343,28 +343,23 @@
     
     }
 
-    .caseStudiesAlti-learnMore a{
-    text-decoration: none;
-    color: var(--yasil);
-    }
-
     .caseStudies h1{
     background-color: var(--yasil);
     border:4px solid var(--yasil);        
     border-radius: 8px;        
     padding: 0px 14px;        
-    margin: 16px;        
-    font-size: 28px;        
-    }        
+    margin: 16px;              
+    font-size: 28px;              
+    }              
 
-    .caseStudies-yazisininQabaqindaki{    
-    max-width: 520px;        
-    }    
+    .caseStudies-YazisininQabaqindaki{          
+    max-width: 520px;              
+    }          
 
-    .caseStudies-yazisininQabaqindaki p{
-        margin: 0px;
-        line-height: 1.6;
-    }
+    .caseStudies-YazisininQabaqindaki p{      
+        margin: 0px;      
+        line-height: 1.6;      
+    }      
 
     .caseStudiesAlti .container{
         background-color: #191A23;
@@ -378,6 +373,11 @@
             
     }
 
+    .caseStudiesAlti-learnMore a{
+    text-decoration: none;
+    color: var(--yasil);
+    }
+
     .caseStudiesAlti-text1Yazi1{
         border-right: 1px solid white;
         padding-right: 50px;
@@ -388,7 +388,98 @@
         border-right: 1px solid white;
         padding-right: 50px;
             
-    }        
+    }
+
+    .ourWorking{
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+        max-width: 1100px;
+        margin: 48px auto 24px;
+        padding: 0 24px;
+    }
+    
+    .ourWorkingProcesYazisi h1{
+        background-color: var(--yasil);
+        border:4px solid var(--yasil);        
+        border-radius: 8px;        
+        padding: 0px 14px;        
+        margin: 16px;              
+        font-size: 28px;
+    }
+
+    .ourWorkingProcesYazisininQabaqindaki{
+        max-width: 520px;
+    }
+
+    .ourWorkingProcesYazisininQabaqindaki p{      
+        line-height: 1.6; 
+    }
+
+    .process-item {
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+
+   .process-item {
+    margin-bottom: 20px;
+}
+
+/* Tək border burda olacaq */
+.process-item details {
+    background-color: var(--etRengi);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Açıq olanda */
+.process-item details[open] {
+    background-color: var(--yasil);
+}
+
+/* Summary */
+.process-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Default arrow gizlət */
+.process-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* + işarə */
+.process-item summary::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(images/Plus.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+/* Açıq olanda - */
+.process-item details[open] summary::after {
+    background-image: url(images/minus\ icon.svg);
+}
+
+.process-content {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+
+
 
 
     </style>
@@ -558,13 +649,13 @@
         </div>
     </div>
 
-    <div class="caseStudies">
+    <div class="caseStudies">       
         <div class="caseStudies-yazisi">
             <h1>Case Studies</h1>
         </div>
         <div class="caseStudies-YazisininQabaqi">
             <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
-        </div>
+        </div>    
     </div>
 
     <div class="caseStudiesAlti">
@@ -612,6 +703,35 @@
         </div>
 
     </div>
+
+    <div class="ourWorking">
+        <div class="ourWorkingProcesYazisi">
+            <h1>Our Working Process</h1>
+        </div>
+        <div class="ourWorkingProcesYazisininQabaqindaki">
+            <p>Step-by-Step Guide to Achieving <br> Your Business Goals</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="process-item">
+            <details>
+                <summary>
+                    <span class="number">01</span>
+                    Consultation
+                </summary>
+
+                <div class="process-content">
+                    <p>
+                        During the initial consultation, we will discuss your business goals
+                        and objectives, target audience, and current marketing efforts.This will allow us to 
+                        understand your needs and tailor our services to best fit your requirements.
+                    </p>
+                </div>
+            </details>
+        </div>    
+    </div>
+
 
 
 </header>
