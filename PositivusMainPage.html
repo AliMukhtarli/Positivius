@@ -418,65 +418,15 @@
 
     .process-item {
     border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
     }
 
    .process-item {
     margin-bottom: 20px;
-}
+    }
 
-/* Tək border burda olacaq */
-.process-item details {
-    background-color: var(--etRengi);
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 20px;
-    transition: all 0.3s ease;
-}
-
-/* Açıq olanda */
-.process-item details[open] {
-    background-color: var(--yasil);
-}
-
-/* Summary */
-.process-item summary {
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* Default arrow gizlət */
-.process-item summary::-webkit-details-marker {
-    display: none;
-}
-
-/* + işarə */
-.process-item summary::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url(images/Plus.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-
-/* Açıq olanda - */
-.process-item details[open] summary::after {
-    background-image: url(images/minus\ icon.svg);
-}
-
-.process-content {
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
+    details[open]{
+        background-color: var(--yasil);
+    }
 
 
 
@@ -713,25 +663,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="process-item">
-            <details>
-                <summary>
-                    <span class="number">01</span>
-                    Consultation
-                </summary>
-
-                <div class="process-content">
-                    <p>
-                        During the initial consultation, we will discuss your business goals
-                        and objectives, target audience, and current marketing efforts.This will allow us to 
-                        understand your needs and tailor our services to best fit your requirements.
-                    </p>
-                </div>
-            </details>
-        </div>    
-    </div>
-
+    <details>
+        <summary>
+            <p>Text</p>
+        </summary>
+    </details>    
 
 
 </header>
