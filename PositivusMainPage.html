@@ -43,7 +43,7 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 16px 24px;
+            padding: 16px 0px;
         }
 
         /* NAVBAR */
@@ -416,12 +416,36 @@
         line-height: 1.6; 
     }
 
-    details[open]{
-        background-color: var(--yasil);
+    details{
+        background-color: #F3F3F3;
+        transition: 0.7s;
+        border: 2px outset black;
+        border-radius: 16px;
+        padding: 50px;
+        align-items: center;
     }
 
+    details[open]{
+        background-color: var(--yasil);
+        
+    }
 
+    summary{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
 
+    summary::after{
+        content: "+";
+        font-size: 44px;
+        transition: transform 0.6s ease;
+        
+    }
+
+    details[open] summary::after{
+        transform: rotate(45deg);
+    }
 
 
     </style>
@@ -654,13 +678,20 @@
             <p>Step-by-Step Guide to Achieving <br> Your Business Goals</p>
         </div>
     </div>
-
-    <details>
-        <summary>01 Consuation</summary>
-            <p>Text</p>
-        
-    </details>    
-
+    <div class="container">
+        <details>
+            <summary>01 Consuation</summary>
+                <p>During the initial consultation, we will discuss your business goals
+                     and objectives, target audience, and 
+                    current marketing efforts. This will allow us to understand your
+                    needs and tailor our services to best fit your requirements.
+                    During the initial consultation, we will discuss your business goals
+                     and objectives, target audience, and 
+                    current marketing efforts. This will allow us to understand your
+                    needs and tailor our services to best fit your requirements.</p>
+            
+        </details>    
+    </div>
 
 </header>
 
