@@ -489,7 +489,33 @@
     }
 
     .card{
-        
+        border: 2px solid black;
+        border-radius: 40px;
+        padding: 30px 50px;
+    }
+    
+    .top{
+        display:flex;
+        justify-content: space-between;
+        gap: 20px;
+                
+    }
+
+    .cardInformation{
+        flex: 1;
+        min-width: 0;
+    }
+
+    .leftSideOfTop{
+        display: flex;
+        gap: 12px;
+        flex:1;
+    }
+
+
+    .cardImage img{
+        height: 100px;
+        width: 100px;
     }
 
     </style>
@@ -813,20 +839,23 @@
             <div class="team-grid">
                 <div class="card">
                     <div class="top">
-                    <div class="cardImage">
-                        <img src="images/person1Esas.svg" alt="">
-                    </div>
-
-                    <div class="cardInformtion">
-                        <h2>John Smith</h2>
-                        <p>CEO and Founder</p>
-                    </div>
-
-                    <div class="cardLinkedIn">
-                        <a href="#">
-                            <img src="images/linkedin.svg" alt="">
-                        </a>
-                    </div>
+                        <div class="leftSideOfTop">
+                            <div class="cardImage">
+                                <img src="images/person1Esas.svg" alt="">
+                            </div>
+                        
+                            <div class="cardInformation">
+                                <h2>John Smith</h2>
+                                <p>CEO and Founder</p>
+                            </div>
+                        </div>    
+                        
+                            <div class="cardLinkedIn">
+                                <a href="#">
+                                    <img src="images/linkedin.svg" alt="">
+                                </a>
+                            </div>
+                            
                     </div>
 
                     <div class="cardDescription">
