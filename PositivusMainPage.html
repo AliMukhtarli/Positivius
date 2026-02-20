@@ -46,11 +46,21 @@
             padding: 16px 0px;
         }
 
-        /* NAVBAR */
-        .nav {
+        .navbarSticky {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            max-width: 1200px;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        .nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            top: 0;
+            background-color: white;    
         }
 
         .nav-links {
@@ -543,6 +553,29 @@
         gap: 26px;
     }
 
+    .form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F3F3F3;
+        border-radius: 20px;
+        max-width: 1100px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .formSag{
+        flex:1;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    .formSag img{
+        max-width: 120%;
+        transform:translateX(45%);
+    }
+
     .Radio{
         display: flex;
         gap: 48px;
@@ -556,8 +589,9 @@
     }
 
     input{
-        border-radius: 6px;
+        border-radius: 15px;
         padding: 24px 25px;
+        width: 100%;
     }
 
     input[type=text]:focus{
@@ -566,13 +600,14 @@
 
     textarea{
         max-width: 100%;
-        border-radius: 6px;
+        border-radius: 15px;
         resize: none;
         padding: 50px 25px;
+        width: 100%;
     }
 
     button{
-        border-radius: 6px;
+        border-radius: 10px;
         padding: 24px 24px;
         background-color: #191A23;
         color: white;
@@ -591,13 +626,11 @@
 
 <body>
 
-<header>
-    <div class="container">
-
-        <!-- NAVBAR -->
-        <div class="nav">
-            <img src="images/Logo.svg" alt="Positivus Logo">
-
+    <div class="navbarSticky">
+            <div class="nav">
+            <a href="#">
+                <img src="images/Logo.svg" alt="Positivus Logo">
+            </a>
             <div class="nav-links">
                 <a href="#">About us</a>
                 <a href="#">Services</a>
@@ -608,6 +641,10 @@
             </div>
         </div>
 
+    </div>
+
+<header>
+    <div class="container">
         <div class="sekilliYazi">
             <div class="sekilliYazi-yazi">
                 <h1>
@@ -634,18 +671,19 @@
         <img src="images/Logotypes.svg" alt="distributorlarimiz" class="dstrb">
         </div>
     </div>
-    <div class="Servisler">
-        <div class="servislerYazisi">
-            <h1 >Services</h1>
-        </div>
-        <div class="servislerYazisininQabaqindaki">
-            <p>At our digital marketing agency, we offer a range of services to <br>
-                 help businesses grow and succeed online. These services include:</p>
-        </div>
+</header>    
+    <main>
+        <div class="Servisler">
+            <div class="servislerYazisi">
+                <h1 >Services</h1>
+            </div>
+            <div class="servislerYazisininQabaqindaki">
+                <p>At our digital marketing agency, we offer a range of services to <br>
+                     help businesses grow and succeed online. These services include:</p>
+            </div>
         
-    </div>
-
-    <section class="services">
+        </div>
+        <section class="services">
         <div class="container">
             <div class="servislerinToplusu">
                 <div class="searchEngine">
@@ -919,7 +957,7 @@
                         </div>    
                         
                             <div class="cardLinkedIn">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="images/linkedin.svg" alt="">
                                 </a>
                             </div>
@@ -946,7 +984,7 @@
                         </div>    
                         
                             <div class="cardLinkedIn">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="images/linkedin.svg" alt="">
                                 </a>
                             </div>
@@ -973,7 +1011,7 @@
                         </div>    
                         
                             <div class="cardLinkedIn">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="images/linkedin.svg" alt="">
                                 </a>
                             </div>
@@ -1001,7 +1039,7 @@
                         </div>    
                         
                             <div class="cardLinkedIn">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="images/linkedin.svg" alt="">
                                 </a>
                             </div>
@@ -1028,7 +1066,7 @@
                         </div>    
                         
                             <div class="cardLinkedIn">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="images/linkedin.svg" alt="">
                                 </a>
                             </div>
@@ -1111,10 +1149,11 @@
             </form>
         </div>
         <div class="formSag">
-            <img src="images/sekilForm.svg" alt="">
+            <img src="images/ulduz.svg" alt="">
         </div>
     </section>
-</header>
+    </main>
+
 
 </body>
 </html>
