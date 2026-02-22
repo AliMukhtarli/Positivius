@@ -623,16 +623,6 @@
         border-radius: 16px;
     }
 
-    .footerTop{
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    .footerSo{
-        flex: 1;
-    }
-
     .footerTopline{
         display: flex;
         align-items: center;
@@ -647,52 +637,55 @@
 
     .footerNav a{
         color: white;
-        text-decoration: none;
         font-size: 14px;
     }
 
-    .contactUs h3{
-        background:var(--yasil);
-        color: black;
-        display: inline-block;
-        padding:4px 10px;
-        border-radius: 10px;
-        margin-bottom: 12px;
-    }
-
-    .contactUs p{
-        margin: 6px 0;
-        font-size: 14px;
-    }
-
-    .footerSag{
+    .SocialMediaImages {
         display: flex;
-        gap: 12px;
-        background-color: #232532;
-        padding: 20px;
-        border-radius: 16px;
-        align-items: center ;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: row;
     }
 
-    .footerSag input{
-    background:transparent;
-    border:1px solid #555;
-    padding:12px 16px;
-    border-radius:10px;
-    color:white;
+    .SocialMediaImages a{
+        display: inline-flex;
     }
 
-    #footerSag button{
-        background:var(--yasil);
-        border:none;
-        padding:12px px;
-        border-radius:10px;
-        cursor:pointer;
+    .footerMiddle{
+        display: flex;
+        justify-content: space-between;       
     }
 
-    .footerAlt{
-        display:flex;
-        justify-content:space-between;
-        margin-top:20px;
-        font-size:14px;
+    .footerMiddleLeft h3{
+        background-color: var(--yasil);
+        border: 2px solid var(--yasil);
+        border-radius: 6px;
+        color: black;
+        display: inline;
+    }
+
+    .footerMiddleRight{
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 24px;
+        background-color: #292A32;
+        border: 2px solid #292A32;
+        border-radius: 18px;
+        gap: 16px;
+    }
+
+    .footerMiddleRight button{
+        background-color: var(--yasil);
+        color: #000;
+        padding: 16px 32px;
+    }
+
+    .footerBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerBottom a{
+        color: white;
     }
