@@ -935,3 +935,34 @@ summary::after{
   }
 
 }
+
+/* ===== CASE STUDIES TITLE MOBILE ===== */
+
+.caseStudies{
+  display:flex;
+  flex-direction:column;      /* alt-alta */
+  gap:12px;
+  padding:0 20px;
+}
+
+.caseStudies-YazisininQabaqindaki{
+  max-width:100%;
+}
+
+
+/* ===== DESKTOP ===== */
+
+@media (min-width:768px){
+
+  .caseStudies{
+    flex-direction:row;
+    align-items:flex-start;
+    gap:20px;
+    padding:0 24px;
+  }
+
+  .caseStudies-YazisininQabaqindaki{
+    max-width:520px;
+  }
+
+}
