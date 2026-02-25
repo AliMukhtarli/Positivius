@@ -998,3 +998,33 @@ summary::after{
 
 }
 
+/* ===== TEAM TITLE MOBILE ===== */
+
+.team{
+  display:flex;
+  flex-direction:column;   /* alt-alta */
+  gap:12px;
+  padding:0 20px;
+}
+
+.teamYazisininQabaqindaki{
+  max-width:100%;
+}
+
+
+/* ===== DESKTOP ===== */
+
+@media (min-width:768px){
+
+  .team{
+    flex-direction:row;
+    align-items:flex-start;
+    gap:20px;
+    padding:0 24px;
+  }
+
+  .teamYazisininQabaqindaki{
+    max-width:520px;
+  }
+
+}
