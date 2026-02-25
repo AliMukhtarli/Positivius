@@ -904,3 +904,34 @@ summary::after{
   }
 
 }
+
+/* ===== SERVICES TITLE MOBILE ===== */
+
+.Servisler{
+  display:flex;
+  flex-direction:column;     /* alt-alta */
+  gap:12px;
+  padding:0 20px;
+}
+
+.servislerYazisininQabaqindaki{
+  max-width:100%;            /* mobile mətn sıxılmasın */
+}
+
+
+/* ===== DESKTOP ===== */
+
+@media (min-width:768px){
+
+  .Servisler{
+    flex-direction:row;      /* əvvəlki kimi */
+    align-items:flex-start;
+    gap:20px;
+    padding:0 24px;
+  }
+
+  .servislerYazisininQabaqindaki{
+    max-width:520px;
+  }
+
+}
