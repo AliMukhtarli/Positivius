@@ -789,3 +789,44 @@
     flex-direction:row;
   }
 }
+
+/* ===== RESPONSIVE ACCORDION ===== */
+
+details{
+  padding:20px;
+  border-radius:25px;
+}
+
+summary{
+  font-size:18px;
+  gap:10px;
+}
+
+.number{
+  display:none;
+}
+
+summary::after{
+  font-size:26px;
+}
+
+@media (min-width:768px){
+
+  details{
+    padding:40px;
+    border-radius:55px;
+  }
+
+  summary{
+    font-size:35px;
+  }
+
+  .number{
+    display:inline;
+    font-size:40px;
+  }
+
+  summary::after{
+    font-size:44px;
+  }
+}
