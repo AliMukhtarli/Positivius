@@ -288,46 +288,39 @@
         border: 8px solid white;
     }
 
-    .lets {
-        margin-top: 60px;
-    }
+   /* LETS MOBILE */
+.lets .container{
+  background-color: var(--etRengi);
+  display:flex;
+  flex-direction:column;   /* mobile alt-alta */
+  gap:24px;
+  padding:24px;            /* padding azaldı */
+  border-radius:30px;
+}
 
-    .lets .container {
-        background-color: var(--etRengi);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-        padding: 24px 40px;
-        border-radius: 50px;
-    }
+.lets-sekil{
+  order:-1;                /* şəkil yuxarı istəsən */
+}
 
-    .lets-yazi h3 {
-        font-size: 24px;
-        line-height: 1.25;
-        margin: 0 0 20px 0;
-    }
+.lets img{
+  width:100%;
+  height:auto;             /* fixed height silindi */
+}
 
-    .lets-yazi p {
-        font-size: 16px;
-        line-height: 1.6;
-        max-width: 420px;
-        margin-bottom: 24px;
-    }
+/* DESKTOP */
+@media (min-width:768px){
+  .lets .container{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 40px;
+    border-radius:50px;
+  }
 
-    .lets-yazi button {
-        background-color: #191A23;
-        color: #fff;
-        border: none;
-        padding: 14px 22px;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 14px;
-    }
-
-    .lets img {
-        height: 320px;
-    }
+  .lets-sekil{
+    order:0;
+  }
+}
 
     .caseStudies{
         align-items: flex-start;
@@ -688,3 +681,96 @@
     .footerBottom a{
         color: white;
     }
+
+    /* HERO MOBILE */
+.sekilliYazi{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.sekilliYazi-sekil{
+  order:-1; /* şəkil yuxarı */
+}
+
+.sekilliYazi-sekil img{
+  width:100%;
+  height:auto;
+}
+
+/* HERO DESKTOP */
+@media (min-width:768px){
+  .sekilliYazi{
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .sekilliYazi-sekil{
+    order:0;
+  }
+}
+
+.servislerinToplusu{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+@media (min-width:768px){
+  .servislerinToplusu{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+.searchEngine,
+.payPer,
+.socialMedia,
+.emailMarketing,
+.contentCreation,
+.analtyics{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+@media (min-width:768px){
+  .searchEngine,
+  .payPer,
+  .socialMedia,
+  .emailMarketing,
+  .contentCreation,
+  .analtyics{
+    flex-direction:row;
+    align-items:center;
+  }
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+@media (min-width:600px){
+  .team-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (min-width:1024px){
+  .team-grid{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+@media (min-width:900px){
+  .form{
+    flex-direction:row;
+  }
+}
