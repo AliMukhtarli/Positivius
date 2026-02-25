@@ -1,16 +1,10 @@
 * {
             box-sizing: border-box;
         }
-       @media (max-width: 768px) {
-            .Servisler {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-            margin: 32px auto 16px;
-            }
+        html,body{
+            overflow-x:hidden;
         }
-
-
+       
         body {
             margin: 0;
             font-family: "Space Grotesk", sans-serif;
@@ -30,7 +24,7 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 16px 0px;
+            padding: 16px;
         }
 
         .navbarSticky {
@@ -69,13 +63,6 @@
             font-size: 14px;
         }
 
-        
-        .sekilliYazi {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
         .sekilliYazi-yazi h1 {
             font-size: 48px;
             line-height: 1.25;
@@ -99,15 +86,7 @@
             font-size: 14px;
         }
 
-        .sekilliYazi-sekil img {
-            height: 320px;
-        }
 
-        .dstrb{
-            margin-top: 50px;
-            margin-left: -70px;
-            width: 115%;
-        }
         .servislerinToplusu{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -485,12 +464,6 @@
     .teamYazisininQabaqindaki p{
         line-height: 1.6;
     }
-    
-    .team-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-    }
 
     .card{
         border: 2px solid black;
@@ -548,8 +521,6 @@
     }
 
     .form{
-        display: flex;
-        flex-direction: row;
         align-items: center;
         background-color: #F3F3F3;
         border-radius: 20px;
