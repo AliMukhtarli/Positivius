@@ -290,50 +290,50 @@
       height:auto;             /* fixed height silindi */
     }
 
-    /* DESKTOP */
-    @media (min-width:768px){
-      .lets .container{
-        flex-direction:row;
-        align-items:center;
-        justify-content:space-between;
-        padding:24px 40px;
-        border-radius:50px;
-      }
-    
-      .lets-sekil{
-        order:0;
-        }
+/* DESKTOP */
+@media (min-width:768px){
+  .lets .container{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 40px;
+    border-radius:50px;
+  }
+
+  .lets-sekil{
+    order:0;
     }
+}
 
-    .caseStudies{
-        align-items: flex-start;
-        display: flex;
-        gap: 20px;
-        max-width: 1100px;
-        margin: 48px auto 24px;
-        padding: 0 24px;
-    
-    }
+.caseStudies{
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 48px auto 24px;
+    padding: 0 24px;
 
-    .caseStudies h1{
-        background-color: var(--yasil);
-        border:4px solid var(--yasil);        
-        border-radius: 8px;        
-        padding: 0px 14px;        
-        margin: 16px;              
-        font-size: 28px;              
-    }              
+}
 
-    .caseStudies-YazisininQabaqindaki{          
-    max-width: 520px;              
-    }          
+.caseStudies h1{
+    background-color: var(--yasil);
+    border:4px solid var(--yasil);        
+    border-radius: 8px;        
+    padding: 0px 14px;        
+    margin: 16px;              
+    font-size: 28px;              
+}              
 
-    .caseStudies-YazisininQabaqindaki p{      
-        margin: 0px;      
-        line-height: 1.6;      
-    }      
+.caseStudies-YazisininQabaqindaki{          
+max-width: 520px;              
+}          
 
-    /* MOBILE */
+.caseStudies-YazisininQabaqindaki p{      
+    margin: 0px;      
+    line-height: 1.6;      
+}      
+
+/* MOBILE */
 .caseStudiesAlti .container{
   background-color:#191A23;
   display:flex;
