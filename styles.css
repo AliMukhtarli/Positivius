@@ -275,7 +275,7 @@
     .lets .container{
       background-color: var(--etRengi);
       display:flex;
-      flex-direction:column;   /* mobile alt-alta */
+      flex-direction:column;  
       gap:24px;
       padding:24px;           
       border-radius:30px;
