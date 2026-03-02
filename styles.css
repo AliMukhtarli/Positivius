@@ -805,10 +805,8 @@ summary::after{
   }
 }
 
-
-
 .footer{
-  padding:24px;                 /* 48 → kiçik */
+  padding:24px;                
 }
 
 .footerTopline{
