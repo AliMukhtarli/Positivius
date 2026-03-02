@@ -825,7 +825,7 @@ summary::after{
 }
 
 .footerMiddle{
-  flex-direction:column;        /* contact + form alt-alta */
+  flex-direction:column;        
   gap:20px;
 }
 
