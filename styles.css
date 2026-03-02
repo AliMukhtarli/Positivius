@@ -830,7 +830,7 @@ summary::after{
 }
 
 .footerMiddleRight{
-  flex-direction:column;        /* input + button alt-alta */
+  flex-direction:column;       
   padding:24px;
 }
 
@@ -841,7 +841,7 @@ summary::after{
 }
 
 
-/* ===== DESKTOP ===== */
+
 
 @media (min-width:768px){
 
