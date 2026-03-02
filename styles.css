@@ -890,12 +890,12 @@ summary::after{
 }
 
 
-/* ===== DESKTOP ===== */
+
 
 @media (min-width:768px){
 
   .Servisler{
-    flex-direction:row;      /* əvvəlki kimi */
+    flex-direction:row;    
     align-items:flex-start;
     gap:20px;
     padding:0 24px;
