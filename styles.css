@@ -810,13 +810,13 @@ summary::after{
 }
 
 .footerTopline{
-  flex-direction:column;        /* alt-alta */
+  flex-direction:column;        
   align-items:flex-start;
   gap:20px;
 }
 
 .footerNav{
-  flex-direction:column;        /* linklər alt-alta */
+  flex-direction:column;        
   gap:12px;
 }
 
